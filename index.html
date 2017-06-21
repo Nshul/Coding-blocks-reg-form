@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css_style.css">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+ <img src="top%20banner.png" height="200px">
+ <br><br><br><br><br><br><br><br>
+    <div class="container" id="top">
+         <form class="col s12">
+             <div class="row">
+                 <div class="input-field col s4">
+                     <i class="material-icons prefix">account_circle</i>
+                     <input name="First Name" id="icon_prefix" type="text" class="validate" required>
+                     <label for="icon_prefix">First Name</label>
+                 </div>
+                 <div class="input-field col s4">
+                     <input class="validate" name="Middle Name" id="middle_name" type="text">
+                     <label for="middle_name">Middle Name</label>
+                 </div>
+                 <div class="input-field col s4">
+                     <input class="validate" name="Last Name" id="last_name" type="text" required>
+                     <label for="last_name">Last Name</label>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="input-field col s12">
+                     <i class="material-icons prefix">store</i>
+                     <input name="Address" id="address" type="text" class="validate" required>
+                     <label for="address">Address</label>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="input-field col s6">
+                     <i class="material-icons prefix">phone</i>
+                     <input name="Phone No" id="icon_telephone" type="tel" class="validate" required>
+                     <label for="icon_telephone">Telephone</label>
+                 </div>
+             </div>
+             <div class="row">
+                         <div class="input-field col s12">
+                             <i class="material-icons prefix">email</i>
+                             <input name="Email" id="email" type="email" class="validate" required>
+                             <label for="email" data-error="wrong" data-success="right">Email</label>
+                         </div>
+             </div>
+             <div class="row">
+                 <div class="input-field col s12">
+                     <i class="material-icons prefix mdi mdi-36pc mdi-calendar"></i>
+                     <input name="Birthdate" id="birthdate" type="text" class="datepicker validate" required>
+                     <label for="birthdate" name="Birthdate">Date Of Birth</label>
+                 </div>
+
+                 <!--<div class="col s1">-->
+                     <!--<i class="mdi mdi-36px mdi-calendar"></i>-->
+                 <!--</div>-->
+                 <!--<div class="input-field col s11">-->
+                 <!--<label name="Birthdate" class="" for="birthdate">Date of Birth</label>-->
+                     <!--<input id="birthdate" type="date" class="datepicker" required>-->
+                 <!--</div>-->
+             </div>
+             <div class="input-field row col offset-s1"><h4 class="grey-text text-darken-3">&nbsp;&nbsp;Gender</h4>
+             <p>
+                 <input class="with-gap" name="gender" type="radio" id="Male" value="Male" />
+                 <label for="Male">Male</label>
+             </p>
+             <p>
+                 <input class="with-gap" name="gender" type="radio" id="Female" value="Female" />
+                 <label for="Female">Female</label>
+             </p>
+             <p>
+                 <input class="with-gap" name="gender" type="radio" id="Others" value="Others" />
+                 <label for="Others">Others</label>
+             </p></div><br>
+             <div class="row">
+                 <div class="input-field col s4">
+                     <i id="map_logo" class="mdi mdi-36px mdi-map material-icons prefix "></i>
+                     <input name="First Name" id="Nationality" type="text" class="validate" required>
+                     <label for="Nationality">Nationality</label>
+                 </div>
+                 <!--<i id="flag_logo" class="mdi mdi-36px mdi-map"></i>-->
+                 <!--<div class="input-field col s4">-->
+                     <!--<input class="validate" type="text" id="nationality" value="Nationality" ><label for="nationality">Nationality</label></div>-->
+             </div>
+             <div class="row">
+                 <div class="col s1"><i class="mdi mdi-36px mdi-school"></i></div>
+                 <div class="input-field col s4"><input class="validate" value="University" type="text" id="univ" required><label for="univ">College</label></div>
+                 <div class="input-field col s4"><input class="validate" value="Stream" type="text" id="stream"><label for="stream">Stream</label></div>
+                 <div class="input-field col s4 offset-s1"><input class="validate" value="Grad Year" type="text" id="gradyear"><label for="gradyear">Expected Graduation Year</label></div>
+                </div><br>
+             <div class="input-field col s12">
+                 <select>
+                     <option value="" disabled selected>Choose your option</option>
+                     <option value="Gurgaon">Gurgaon Centre</option>
+                     <option value="Pitampura">Pitampura Centre</option>
+                     <option value="Greater Node">Greater Noida Centre</option>
+                     <option value="Dwarka">Dwarka Centre</option>
+                 </select>
+                 <label>Select Centre</label>
+             </div><br>
+             <div class="input-field col s12">
+                 <select>
+                     <option value="" disabled selected>Choose your option</option>
+                     <option value="C++ Crux">C++ Crux</option>
+                     <option value="Java Crux">Java Crux</option>
+                     <option value="Elixir">Elixir</option>
+                     <option value="Pandora">Pandora</option>
+                 </select>
+                 <label>Select Course</label>
+             </div>
+             <br><br>
+             <div class="row"><div class="col s3">
+             <button class="btn waves-effect waves-light" type="submit" name="Submit" id="Submit_button">Submit
+                 <i class="material-icons right">send</i>
+             </button></div>
+             <div class="col s3"><button class="btn waves-effect waves-light" type="reset" name="Reset" id="Reset_button">
+                 Reset
+             </button></div></div>
+ </form></div>
+
+
+
+ <script src="style_js.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>

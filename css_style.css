@@ -1,0 +1,43 @@
+
+#top{
+    border-style: outset;
+    border-radius: 25px;
+    border-width: 5px;
+    border-color: #f15f52 ;
+    padding: 10px;
+}
+.input-field input[type=text]:focus + label {
+    color: #f15f52;
+}
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #f15f52;
+    box-shadow: 0 1px 0 0 #f15f52;
+}
+.input-field input[type=tel]:focus + label {
+    color: #f15f52;
+}
+.input-field input[type=tel]:focus {
+    border-bottom: 1px solid #f15f52;
+    box-shadow: 0 1px 0 0 #f15f52;
+}
+.with-gap :focus + label {
+    color: #f15f52;
+}
+.with-gap :focus {
+    border-bottom: 1px solid #f15f52;
+    box-shadow: 0 1px 0 0 #f15f52;
+}
+.input-field input[type=email]:focus + label {
+    color: #f15f52;
+}
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #f15f52;
+    box-shadow: 0 1px 0 0 #f15f52;
+}
+.input-field input[type=email].invalid {
+    border-bottom: 1px solid #f44336 ;
+    box-shadow: 0 1px 0 0 #ff0000 ;
+}
+.input-field .prefix.active {
+    color: #f15f52;
+}
